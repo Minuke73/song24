@@ -628,12 +628,14 @@ if (reversed == null) { reversed = false; }
 	}
 	this.frame_1499 = function() {
 		this.gotoAndStop('노래듣기');
+		this.play_btn.visible = true;
 	}
 	this.frame_1500 = function() {
 		this.stop();
 	}
 	this.frame_1541 = function() {
 		this.gotoAndStop('전문가창');
+		this.play_btn.visible = true;
 	}
 	this.frame_1542 = function() {
 		this.stop();
@@ -644,6 +646,7 @@ if (reversed == null) { reversed = false; }
 	}
 	this.frame_4316 = function() {
 		this.gotoAndStop('따라부르');
+		this.play_btn.visible = true;
 	}
 	this.frame_4317 = function() {
 		var soundInstance = playSound("stos_music",0);
@@ -652,6 +655,7 @@ if (reversed == null) { reversed = false; }
 	}
 	this.frame_5815 = function() {
 		this.gotoAndStop('반주듣기');
+		this.play_btn.visible = true;
 	}
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1499).call(this.frame_1499).wait(1).call(this.frame_1500).wait(41).call(this.frame_1541).wait(1).call(this.frame_1542).wait(17).call(this.frame_1559).wait(2757).call(this.frame_4316).wait(1).call(this.frame_4317).wait(1498).call(this.frame_5815).wait(1));
